@@ -1,4 +1,10 @@
 /* This is media query stylesheet for screen 576px and below */
+#container {
+    width: 100% !important;
+}
+#header {
+    padding: 0 1.4rem;
+}
 .container {
     max-width: 100%;
     width: 100%;
@@ -29,7 +35,7 @@
 
 /* menu-items-tile changes */
 .menu-items-tile {
-    min-width: 48px;
+    min-width: 45px;
 }
 .menu-items-tile>span:nth-child(2) {
     display: none;
@@ -98,6 +104,10 @@
 }
 #show-more-less-dropdown>button>.show-less {
     display: none;
+}
+
+.sort-items-bar {
+    width: 94%;
 }
 
 .message-box {
