@@ -1,0 +1,100 @@
+.container {
+    max-width: 100%;
+    width: 100%;
+}
+
+/* header */
+/* li width must be changed according to menu-items-tile changes */
+#menu-items {
+    flex-grow: 1;
+}
+#menu-items>ul {
+    justify-content: space-between; 
+}
+#menu-items li {
+    margin: 0 .4rem;
+    height: 100%;
+}
+.header-menu-items>.row {
+    height: 100%;
+    min-height: 2.4rem;
+}
+
+/* active class changes */
+.active>*::after {
+    content:"";
+    display: none;
+}
+
+/* menu-items-tile changes */
+.menu-items-tile {
+    min-width: 48px;
+}
+.menu-items-tile>span:nth-child(2) {
+    display: none;
+}
+
+
+/* for main content */
+#content {
+    margin-top: 65px;
+}
+#content>.container {
+    max-width: 576px;
+    margin: 0 auto;
+}
+#content>.container>.row>* {
+    grid-column: 1/2;
+    max-width: 100%;
+}
+#content-left-row {
+    grid-area: aside-left;
+    grid-row: 1/2;
+}
+#main {
+    grid-area: main;
+}
+#content-right-row {
+    grid-area: aside-right;
+}
+
+#content>.container>.row {
+    display: grid;
+    grid-template-areas: 
+    "aside-left-row"
+    "show-more"
+    "main"
+    "aside-right-row";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    row-gap: 1rem;
+}
+/* hiding aside-left-row's content for show more */
+#content-left-row .connections {
+    display: none;
+}
+#content-left-row .exclusive-tools {
+    display: none;
+}
+#content-left-row .my-items {
+    display: none;
+}
+#content-left-row .widget-bottom {
+    display: none;
+    position: static;
+}
+
+
+/* for dropdown box (show-more or show-less) */
+#show-more-less-dropdown {
+    display: block;
+    grid-area: show-more;
+    grid-row: 2/3;
+}
+#show-more-less-dropdown>button>.show-less {
+    display: none;
+}
+
+.message-box {
+    display: none;
+}

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://static.licdn.com/sc/h/akt4ae504epesldzj74dzred8">
+    <title>Feed | LinkedIn</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1200px)" href="assets/stylesheets/media_query_stylesheets/media-styles_max-1200.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="assets/stylesheets/media_query_stylesheets/media-styles_max-992.css">
+    <link rel="stylesheet" media="screen and (min-width: 576px) and (max-width: 768px)" href="assets/stylesheets/media_query_stylesheets/media-styles_max-768.css">
+    <link rel="stylesheet" media="screen and (max-width: 576px)" href="assets/stylesheets/media_query_stylesheets/media-styles_max-576.css">
+    <!-- font awesome js -->
+    <script src="https://kit.fontawesome.com/534bf90a70.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <!-- header -->
+        <header id="header" class="bg-white w-100 auto-margin fixed abs-t-0 z-100">
+            <div class="container">
+                <div class="row space-between align-center">
+                    <div class="logo-search fg-1 h-100">
+                        <div class="row align-center">
+                            <div id="linkedin-logo" class="row align-center justify-center space-evenly">
+                                <a href="#" class="w-100 inline-block flex align-center">
+                                    <img class="w-100 inline-block" src="../06-LinkedIn_Project/assets/logo/In/In-Blue-48.png" alt="logo">
+                                </a>
+                            </div>
+                            <div id="search-bar" class="fg-1">
+                                <div class="search-bar-row w-100 relative">
+                                    <input class="w-100 f-14 border-none b-9" type="text" placeholder="Search">
+                                    <div class="search-tool-icon absolute abs-t-0 abs-l-0 column justify-center align-center">
+                                        <i class="fa-solid fa-magnifying-glass f-14" style="color: rgba(0,0,0,0.6);"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu-items-work-premium">
+                        <div class="row space-evenly align-center">
+                            <nav id="menu-items">
+                                <ul class="flex text-center justify-flex-end align-start">
+                                    <li class="relative search-icon-button hidden">
+                                        <button class="menu-items-tile column align-center justify-center">
+                                            <div class="search-icon header-menu-items">
+                                                <div class="row align-center justify-center h-100">
+                                                    <i class="fa-solid fa-magnifying-glass" style="color: rgba(0,0,0,0.6);"></i>
+                                                </div>
+                                            </div>
+                                            <span class="search-icon-text f-12 grey-light">Search</span>
+                                        </button>
+                                    </li>
+                                    <li class="active relative black-hover-parent">
+                                        <a href="#" class="menu-items-template">
+                                            <div class="menu-items-tile column align-center justify-center">
+                                                <span class="header-menu-items">
+                                                    <div class="row align-center justify-center">
+                                                        <i class="fa-solid fa-house black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                    </div>
+                                                </span>
+                                                <span class="header-home f-12 grey-light black-hover-child">Home</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="relative black-hover-parent">
+                                        <a href="#" class="menu-items-template block">
+                                            <div class="menu-items-tile column align-center justify-center">
+                                                <span class="header-menu-items">
+                                                    <div class="row align-center justify-center">
+                                                        <i class="fa-solid fa-user-group black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                    </div>
+                                                </span>
+                                                <span class="header-network f-12 grey-light black-hover-child">My Network</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="relative black-hover-parent">
+                                        <a href="#" class="menu-items-template block relative">
+                                            <div class="menu-items-tile column align-center justify-center">
+                                                <span class="header-menu-items">
+                                                    <div class="row align-center justify-center">
+                                                        <i class="fa-solid fa-briefcase black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                    </div>
+                                                </span>
+                                                <span class="header-jobs f-12 grey-light black-hover-child">Jobs</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="relative black-hover-parent">
+                                        <a href="#" class="menu-items-template block relative">
+                                            <div class="menu-items-tile column align-center justify-center">
+                                                <span class="header-menu-items">
+                                                    <div class="row align-center justify-center">
+                                                        <i class="fa-solid fa-message black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                    </div>
+                                                </span>
+                                                <span class="header-messaging f-12 grey-light black-hover-child">Messaging</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="relative black-hover-parent">
+                                        <a href="#" class="menu-items-template block relative">
+                                            <div class="menu-items-tile column align-center justify-center">
+                                                <span class="header-menu-items">
+                                                    <div class="row align-center justify-center">
+                                                        <i class="fa-solid fa-bell black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                    </div>
+                                                </span>
+                                                <span class="header-notifications f-12 grey-light black-hover-child">Notifications</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="black-hover-parent">
+                                        <button class="menu-items-template block">
+                                            <div class="menu-items-tile column align-center justify-center">
+                                                <span class="header-menu-items">
+                                                    <div class="row align-center justify-center">
+                                                        <img class="user-profile circular-border header-menu-items" src="https://media.licdn.com/dms/image/D4D03AQFoPMmhIc6r0A/profile-displayphoto-shrink_100_100/0/1665004180317?e=1689206400&v=beta&t=RNJGSeWRHi8j4nB84U-eAQVouFFdfx0AW8Q9morECE4" alt="profile">
+                                                    </div>
+                                                </span>
+                                                <span class="profile-menu-item">
+                                                    <div class="row text-and-triangle-icon-gap">
+                                                        <span class="header-profile-me f-12 grey-light black-hover-child">Me</span>
+                                                        <i class="fa-solid fa-sort-down black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="black-hover-parent relative" id="for-business">
+                                        <button class="menu-items-template block">
+                                            <div class="menu-items-tile column align-center justify-center">
+                                                <span class="header-menu-items">
+                                                    <div class="row align-center justify-center">
+                                                        <i class="fa-solid fa-list black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                    </div>
+                                                </span>
+                                                <span class="work-tab">
+                                                    <div class="row text-and-triangle-icon-gap">
+                                                        <span class="extras-work-linkedin f-12 grey-light black-hover-child">For Business</span> 
+                                                        <i class="fa-solid fa-sort-down" style="color: rgba(0,0,0,0.6)";></i>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <div class="menu-items-template block">
+                                            <div id="try-premium" class="menu-items-tile column align-center justify-center">
+                                                <a href="#" class="underlined f-12 inline-block">Try Premium for free</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- main-content -->
+        <!-- for 3 col layout -->
+        <div id="content" class="w-100">
+            <div class="container">
+                <div class="row space-between align-start">
+                    <aside id="content-left-row">
+                        <div class="widgets">
+                            <div class="col">
+                                <div class="widget-top bg-white content-border">
+                                    <div class="profile-widget text-center">
+                                        <div class="img-bg block"></div>
+                                        <div class="text-section-profile content-padding no-top-padding">
+                                            <a href="#" class="hover-underlined inline-block w-100 min-bottom-padding">
+                                                <div class="profile-img">
+                                                    <img class="circular-border" src="https://media.licdn.com/dms/image/D4D03AQFoPMmhIc6r0A/profile-displayphoto-shrink_100_100/0/1665004180317?e=1686182400&v=beta&t=K22Sf77Z7JgZ8GVjw2EIpWaPgNtn2eDekfphh-YikJA" alt="profile">
+                                                </div>
+                                                <div class="user-name grey-dark bold head-font">
+                                                    <span>Ashutosh Singh Rawat</span>
+                                                </div>
+                                            </a>
+                                            <div class="profile-about grey-light f-12 normal min-bottom-padding">
+                                                <span>CSE Student (ML) | Machine Learning
+                                                                Enthusiast
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connections top-bottom-padding-120">
+                                        <div class="padded-connection light-grey-hover">
+                                            <a href="#" class="block padding-alpha-412">
+                                                <div class="row space-between f-12">
+                                                    <div class="connection-headings">
+                                                        <span class="grey-light bold block">Connections</span>
+                                                        <span class="grey-dark bold block">Connect with alumni</span>
+                                                    </div>
+                                                    <div class="connection-number blue-1 bold">
+                                                        <span class="num">35</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="exclusive-tools content-padding light-grey-hover f-12">
+                                        <a href="#">
+                                            <span class="grey-light normal">Access exclusive tools & insights</span>
+                                            <div class="premium-link">
+                                                <i class="fa-solid fa-square-full" style="color: rgb(231, 163, 62);"></i>
+                                                <span class="underlined bold grey-very-dark">Try Premium for free</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="my-items content-padding light-grey-hover">
+                                        <a href="#" class="flex align-center between-items-gap justify-flex-start">
+                                            <i class="fa-solid fa-bookmark f-14" style="color: rgba(0,0,0,0.6);"></i>
+                                            <span class="bookmark grey-dark bold f-12">My items</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sticky-element">
+                                    <div class="widget-bottom bg-white content-border">
+                                        <div class="profile-stats f-12 bold">
+                                            <div class="groups-widget left-right-padding-120">
+                                                <a href="#" class="blue-1 inline-block content-stats-padding">Groups</a>
+                                            </div>
+                                            <div class="events-widget flex space-between align-center left-right-padding-120">
+                                                <span class="events fg-1">
+                                                    <a href="#" class="w-100 inline-block blue-1 content-stats-padding">Events</a>
+                                                </span>
+                                                <button title="" class="add-events block small-box-32 light-grey-hover">
+                                                    <i class="fa-solid fa-plus f-15" style="color: rgba(0,0,0,0.6);"></i>
+                                                </button>
+                                            </div>
+                                            <div class="hastags-widget left-right-padding-120">
+                                                <a href="#" class="blue-1 inline-block content-stats-padding">Followed Hashtags</a>
+                                            </div>
+                                        </div>
+                                        <div class="discover-more-widget content-padding text-center light-grey-hover">
+                                            <a href="#" class="grey-light bold block w-100 f-14">Discover more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside id="show-more-less-dropdown" class="hidden">
+                        <button class="w-100">
+                            <div class="show-more w-100 bold flex justify-center align-center between-items-gap">
+                                <span class="show-more-dropdown f-14 grey-light">Show more</span>
+                                <i class="fa-solid fa-chevron-down f-15" style="color: rgba(0,0,0,0.6);"></i>
+                            </div>
+                            <div class="show-less w-100 bold flex justify-center align-center between-items-gap">
+                                <span class="show-less-dropdown f-14 grey-light">Show less</span>
+                                <i class="fa-solid fa-chevron-up f-15" style="color: rgba(0,0,0,0.6);"></i>
+                            </div>
+                        </button>
+                    </aside>
+                    <main id="main">
+                        <div class="col">
+                            <div class="post-feed bg-white content-border">
+                                <div class="post-feed-profile-post-feed-box small-gap-8 flex align-center">
+                                    <a class="post-feed-profile inline-block" href="#">
+                                        <img class="image-widget-48" src="https://media.licdn.com/dms/image/D4D03AQFoPMmhIc6r0A/profile-displayphoto-shrink_100_100/0/1665004180317?e=1686182400&v=beta&t=K22Sf77Z7JgZ8GVjw2EIpWaPgNtn2eDekfphh-YikJA" alt="profile">
+                                    </a>
+                                    <div class="post-feed-box w-100 pointer-hover">
+                                        <button type="button" class="w-100 flex grey light-grey-hover f-14">
+                                            <span class="post-button bold grey-light flex align-center">Start a post</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="post-widgets">
+                                    <ul class="flex space-around align-center">
+                                        <li>
+                                            <button class="item-template text-center border-none flex align-center space-between bg-white">
+                                                <span class="icon">
+                                                    <i class="fa-solid fa-image" style="color: rgb(55, 143, 233);"></i>
+                                                </span>
+                                                <span class="icon-name bold f-14">Photo</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="item-template text-center border-none flex align-center space-between bg-white">
+                                                <span class="icon">
+                                                    <i class="fa-brands fa-youtube" style="color: rgb(95, 155, 65);"></i>
+                                                </span>
+                                                <span class="icon-name bold f-14">Video</span>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <a href="" class="item-template text-center flex align-center space-between">
+                                                <span class="icon inline-block">
+                                                    <i class="fa-regular fa-calendar" style="color: rgb(195, 125, 22);"></i>
+                                                </span>
+                                                <span class="icon-name bold inline-block f-14">Event</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="item-template text-center flex align-center space-between">
+                                                <span class="icon">
+                                                    <i class="fa-regular fa-newspaper" style="color: rgb(225, 103, 69);"></i>
+                                                </span>
+                                                <span class="icon-name bold f-14">Write article</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sort-items-bar flex w-100">
+                                <button class="w-100">
+                                    <div class="flex w-100 align-center">
+                                        <hr class="linebar fg-1 border-none">
+                                        <span class="sort-items text-end flex between-items-gap">
+                                            <span class="sort-by whitespace-wrap grey-light f-12">Sort by:</span>
+                                            <span class="sort-type f-12 bold">Top</span>
+                                            <span class="chevron-down f-14"><i class="fa-solid fa-sort-down"></i></span>
+                                        </span>
+                                    </div>
+                                </button>
+                            </div>
+                            <!-- Post starts here for the main section -->
+                            <div class="news-feed">
+                                <div class="col">
+                                    <!-- single post content structure -->
+                                    <div class="news-feed-content-box bg-white content-border">
+                                        <div class="content-info-desc-box">
+                                            <div class="content-info-box flex space-between">
+                                                <div class="content-details fg-1">
+                                                    <a href="#" class="flex small-gap-8">
+                                                        <div class="content-logo">
+                                                            <img class="" src="https://media.licdn.com/dms/image/C4D0BAQHYemd2p7TxeQ/company-logo_100_100/0/1673333565608?e=1688601600&v=beta&t=WE_t91geB5TNeRq33riXV2xLwJBAI-Mf6QJ5lgSN_C0" alt="company-logo">
+                                                        </div>
+                                                        <div class="content-name-info fg-1">
+                                                            <div class="content-name f-14 bold black-text">
+                                                                HackerRank
+                                                            </div>
+                                                            <div class="content-follow-count grey-light f-12">
+                                                                <span class="followers-count">
+                                                                    1,242,883
+                                                                </span>
+                                                                followers
+                                                            </div>
+                                                            <div class="content-time-availability flex f-12 grey-light between-items-gap">
+                                                                <div class="content-time-posted">
+                                                                    1d
+                                                                </div>
+                                                                <div class="between-content-dot">
+                                                                    <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                                </div>
+                                                                <div class="content-availability">
+                                                                    <i class="fa-solid fa-earth-americas" style="color: rgba(0,0,0,0.6)"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="content-more-options">
+                                                    <button title="button" class="light-grey-hover small-box-32">
+                                                        <div class="row h-100 justify-center align-center">
+                                                            <i class="fa-solid fa-ellipsis spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="content-desc f-14">
+                                                <span>Do what you love, and the money will follow! ✨</span>
+                                                <br>
+                                                <br>
+                                                <span>Happy Monday folks!</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-img">
+                                            <button title="button">
+                                                <img class="w-100" src="https://media.licdn.com/dms/image/sync/D4E34AQFI3gr3MUSDQg/ugc-proxy-shrink_800/0/1677766540380?e=1685005200&v=beta&t=ozuPRPCzVl7cc-CN5107I44JzveZNyJ2XtYbh5QuiL0" alt="content image">
+                                            </button>
+                                        </div>
+                                        <div class="content-stats flex space-between grey-light f-12 content-stats-padding">
+                                            <div class="content-icons-likes flex space-between">
+                                                <button title="button">
+                                                    <div class="row between-items-gap align-center">
+                                                        <div class="content-icons flex align-center">
+                                                            <img src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like-reaction">
+                                                            <img src="https://static.licdn.com/sc/h/cpho5fghnpme8epox8rdcds22" alt="heart-reaction">
+                                                            <img src="https://static.licdn.com/sc/h/b1dl5jk88euc7e9ri50xy5qo8" alt="celebration-response">
+                                                        </div>
+                                                        <div class="content-likes grey-light f-12 blue-text-hover">
+                                                            1,498
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                            <div class="post-comments-reposts flex space-evenly">
+                                                <div class="row between-items-gap align-center">
+                                                    <div class="post-comments">
+                                                        <button title="button">
+                                                            <span class="comment-details f-12 grey-light blue-text-hover">
+                                                                8 comments
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="between-content-dot">
+                                                        <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                    </div>
+                                                    <div class="post-reposts">
+                                                        <button title="button">
+                                                            <span class="reposts-details f-12 grey-light blue-text-hover">
+                                                                25 reposts
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-response padding-alpha-412">
+                                            <ul class="flex space-between">
+                                                <li>
+                                                    <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
+                                                        <span class="response-icon">
+                                                            <i class="fa-regular fa-thumbs-up fa-flip-horizontal spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="response-name grey-light f-14">Like</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
+                                                        <span class="response-icon">
+                                                            <i class="fa-regular fa-comment-dots spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="response-name grey-light f-14">Comment</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
+                                                        <span class="response-icon">
+                                                            <i class="fa-solid fa-retweet fa-flip-vertical spec-font-20" style="color: rgba(0,0,0,0.6)"></i>
+                                                        </span>
+                                                        <span class="response-name grey-light f-14">Repost</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
+                                                        <span class="response-icon">
+                                                            <i class="fa-solid fa-paper-plane spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="response-name grey-light f-14">Send</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- second post -->
+                                    <div class="news-feed-content-box bg-white content-border">
+                                        <div class="content-info-desc-box">
+                                            <div class="content-info-box flex space-between">
+                                                <div class="content-details fg-1">
+                                                    <a href="#" class="flex small-gap-8">
+                                                        <div class="content-logo">
+                                                            <img class="posted-by-user" src="https://media.licdn.com/dms/image/C4D03AQFmnv7XvbdVPQ/profile-displayphoto-shrink_100_100/0/1608334009480?e=1689811200&v=beta&t=UDsI2TElGy5Lg6Ix7XRWqaeNop8lMuub5bywSjQH6ko" alt="user-profile">
+                                                        </div>
+                                                        <div class="content-name-info fg-1">
+                                                            <div class="content-name f-14 bold black-text">
+                                                                Dmitrii Lepisov
+                                                            </div>
+                                                            <div class="content-follow-count grey-light f-12">
+                                                                <span class="job-specification">
+                                                                    Branding Expert
+                                                                </span>
+                                                            </div>
+                                                            <div class="content-time-availability flex f-12 grey-light between-items-gap align-center">
+                                                                <div class="content-time-posted">
+                                                                    6d
+                                                                </div>
+                                                                <div class="between-content-dot">
+                                                                    <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                                </div>
+                                                                <div class="edited-status">Edited</div>
+                                                                <div class="between-content-dot">
+                                                                    <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                                </div>
+                                                                <div class="content-availability">
+                                                                    <i class="fa-solid fa-earth-americas" style="color: rgba(0,0,0,0.6)"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="content-more-options">
+                                                    <button title="button" class="light-grey-hover small-box-32">
+                                                        <div class="row h-100 justify-center align-center">
+                                                            <i class="fa-solid fa-ellipsis spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="content-desc f-14">
+                                                <span>Number 5 for Fiverr. 36 Days of Type. Day 32</span>
+                                                <br>
+                                                <br>
+                                                <span>It may sound pretty strange, but for number 5 I got inspired by the Fiverr service</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-img">
+                                            <button title="button">
+                                                <img class="w-100" src="https://media.licdn.com/dms/image/D4D22AQF0_UGNqqdPlw/feedshare-shrink_800/0/1683815303359?e=1687392000&v=beta&t=5Qvu0LtR97gIgx985RAGT1y2oKKN6CiZe5v-FiNGU9I" alt="content image">
+                                            </button>
+                                        </div>
+                                        <div class="content-stats flex space-between grey-light f-12 content-stats-padding">
+                                            <div class="content-icons-likes flex space-between">
+                                                <button title="button">
+                                                    <div class="row between-items-gap align-center">
+                                                        <div class="content-icons flex align-center">
+                                                            <img src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like-reaction">
+                                                            <img src="https://static.licdn.com/sc/h/cpho5fghnpme8epox8rdcds22" alt="heart-reaction">
+                                                            <img src="https://static.licdn.com/sc/h/b1dl5jk88euc7e9ri50xy5qo8" alt="celebration-response">
+                                                        </div>
+                                                        <div class="content-likes grey-light f-12 blue-text-hover">
+                                                            Josie Rocha and 217 others
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                            <div class="post-comments-reposts flex space-evenly">
+                                                <div class="row between-items-gap align-center">
+                                                    <div class="post-comments">
+                                                        <button title="button">
+                                                            <span class="comment-details f-12 grey-light blue-text-hover">
+                                                                34 comments
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="between-content-dot">
+                                                        <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                    </div>
+                                                    <div class="post-reposts">
+                                                        <button title="button">
+                                                            <span class="reposts-details f-12 grey-light blue-text-hover">
+                                                                2 reposts
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-response padding-alpha-412">
+                                            <ul class="flex space-between">
+                                                <li>
+                                                    <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
+                                                        <span class="response-icon">
+                                                            <i class="fa-regular fa-thumbs-up fa-flip-horizontal spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="response-name grey-light f-14">Like</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
+                                                        <span class="response-icon">
+                                                            <i class="fa-regular fa-comment-dots spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="response-name grey-light f-14">Comment</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
+                                                        <span class="response-icon">
+                                                            <i class="fa-solid fa-retweet fa-flip-vertical spec-font-20" style="color: rgba(0,0,0,0.6)"></i>
+                                                        </span>
+                                                        <span class="response-name grey-light f-14">Repost</span>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
+                                                        <span class="response-icon">
+                                                            <i class="fa-solid fa-paper-plane spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="response-name grey-light f-14">Send</span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- posts end here -->
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+
+                    <!-- news and other content here -->
+                    <aside id="content-right-row">
+                        <div class="col">
+                            <div class="linkedin-news bg-white content-border top-bottom-padding-120">
+                                <div class="linkedin-news-bar left-right-padding-120 flex space-between">
+                                    <div class="linkedin-news-title bold f-16">LinkedIn News</div>
+                                    <button class="news-info-logo pointer-hover border-none bg-none">
+                                        <i class="fa-solid fa-circle-info" style="color: rgb(0,0,0);"></i>
+                                    </button>
+                                </div>
+                                <!-- news content templates -->
+                                <div class="news-content-template">
+                                    <ul class="news-content col">
+                                        <li class="news-tile light-grey-hover">
+                                            <a href="#">
+                                                <div class="news-headline-tile">
+                                                    <div class="row align-center">
+                                                        <span class="news-list-dot">
+                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="news-headline bold">Hiring intent up in these sectors</span>
+                                                    </div>
+                                                </div>
+                                                <div class="news-stats-tile f-12 grey-light">
+                                                    <div class="row align-center">
+                                                        <span class="news-timestamp-info">
+                                                            <span class="timestamp-value">1d</span>
+                                                            ago
+                                                        </span>
+                                                        <span class="between-content-dot">
+                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="news-readers-info">
+                                                            <span class="news-readers-count">378</span>
+                                                            readers
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="news-tile light-grey-hover">
+                                            <a href="#">
+                                                <div class="news-headline-tile">
+                                                    <div class="row align-center">
+                                                        <span class="news-list-dot">
+                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="news-headline bold">DMI Finance raises $400M</span>
+                                                    </div>
+                                                </div>
+                                                <div class="news-stats-tile f-12 grey-light">
+                                                    <div class="row align-center">
+                                                        <span class="news-timestamp-info">
+                                                            <span class="timestamp-value">10h</span>
+                                                            ago
+                                                        </span>
+                                                        <span class="between-content-dot">
+                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="news-readers-info">
+                                                            <span class="news-readers-count">378</span>
+                                                            readers
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="news-tile light-grey-hover">
+                                            <a href="#">
+                                                <div class="news-headline-tile">
+                                                    <div class="row align-center">
+                                                        <span class="news-list-dot">
+                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="news-headline bold">Fresh IPO funding falls sharply</span>
+                                                    </div>
+                                                </div>
+                                                <div class="news-stats-tile f-12 grey-light">
+                                                    <div class="row align-center">
+                                                        <span class="news-timestamp-info">
+                                                            <span class="timestamp-value">1d</span>
+                                                            ago
+                                                        </span>
+                                                        <span class="between-content-dot">
+                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="news-readers-info">
+                                                            <span class="news-readers-count">1020</span>
+                                                            readers
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="news-tile light-grey-hover">
+                                            <a href="#">
+                                                <div class="news-headline-tile">
+                                                    <div class="row align-center">
+                                                        <span class="news-list-dot">
+                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="news-headline bold">IPL's growing global footprint</span>
+                                                    </div>
+                                                </div>
+                                                <div class="news-stats-tile f-12 grey-light">
+                                                    <div class="row align-center">
+                                                        <span class="news-timestamp-info">
+                                                            <span class="timestamp-value">1d</span>
+                                                            ago
+                                                        </span>
+                                                        <span class="between-content-dot">
+                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="news-readers-info">
+                                                            <span class="news-readers-count">914</span>
+                                                            readers
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="news-tile light-grey-hover">
+                                            <a href="#">
+                                                <div class="news-headline-tile">
+                                                    <div class="row align-center">
+                                                        <span class="news-list-dot">
+                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="news-headline bold">More shoppers eye premium products</span>
+                                                    </div>
+                                                </div>
+                                                <div class="news-stats-tile f-12 grey-light">
+                                                    <div class="row align-center">
+                                                        <span class="news-timestamp-info">
+                                                            <span class="timestamp-value">10h</span>
+                                                            ago
+                                                        </span>
+                                                        <span class="between-content-dot">
+                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        </span>
+                                                        <span class="news-readers-info">
+                                                            <span class="news-readers-count">104</span>
+                                                            readers
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="more-news-content flex align-center">
+                                    <button class="show-more-button text-center">
+                                        <span class="show-more-text grey-light bold transparent-bg">
+                                            Show more
+                                        </span>
+                                        <i class="fa-solid fa-chevron-down" style="color: rgba(0,0,0,0.6);"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- advertisement content -->
+                            <div class="advert-template bg-white content-border w-100 flex align-center justify-center">
+                                <a href="#" class="inline-block">
+                                    <img class="w-100 h-100 round-edge" src="https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png" alt="advertisement">
+                                </a>
+                            </div>
+
+                            <footer>
+                                <!-- copyright info about section -->
+                                <div class="about-page-copyright-section text-center">
+                                    <div class="about-page-section">
+                                        <ul class="wrap-flex align-center justify-center f-12 inline-block grey-light">
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Accessibility</a></li>
+                                            <li><a href="#">Help Center</a></li>
+                                            <li><a href="#">Privacy & Terms <i class="fa-solid fa-sort-down"></i></a></li>
+                                            <li><a href="#">Ad Choices</a></li>
+                                            <li><a href="#">Advertising</a></li>
+                                            <li><a href="#">Business Services <i class="fa-solid fa-sort-down"></i></a></li>
+                                            <li><a href="#">Get the LinkedIn app</a></li>
+                                            <li><a href="#">More</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="copyright-section f-12">
+                                        <span class="linkedin-full-logo">
+                                            <img src="assets/logo/linkedIn/LinkedIn-Blue-21.png" alt="">
+                                        </span>
+                                        <span class="linkedin-copyright">
+                                            LinkedIn Corporation &copy; 2023
+                                        </span>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- for message box -->
+    <div class="message-box content-border inline-block bg-white fixed abs-r-0 abs-b-0 z-100">
+        <div class="row">
+            <div class="message-box-details fg-1 align-center">
+                <div class="row small-gap-8">
+                    <div class="message-box-details-profile">
+                        <img class="small-box-32" src="https://media.licdn.com/dms/image/D4D03AQFoPMmhIc6r0A/profile-displayphoto-shrink_100_100/0/1665004180317?e=1689206400&v=beta&t=RNJGSeWRHi8j4nB84U-eAQVouFFdfx0AW8Q9morECE4" alt="">
+                    </div>
+                    <div class="message-box-messaging flex align-center">
+                        <button>
+                            <span class="messaging bold f-14">
+                                Messaging
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="message-box-controls flex align-center">
+                <div class="row align-center">
+                    <button class="message-box-more-options fs-0 flex align-center space-around light-grey-hover small-box-32">
+                        <i class="fa-solid fa-ellipsis f-16" style="color: rgba(0,0,0,0.6);"></i>
+                    </button>
+                    <button class="message-box-new-message f-14 fs-0 flex align-center space-around light-grey-hover small-box-32">
+                        <i class="fa-solid fa-pen-to-square f-16" style="color: rgba(0,0,0,0.6);"></i>
+                    </button>
+                    <button class="message-box-resize fs-0 flex align-center space-around light-grey-hover small-box-32">
+                        <i class="fa-solid fa-chevron-up f-16" style="color: rgba(0,0,0,0.6);"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
