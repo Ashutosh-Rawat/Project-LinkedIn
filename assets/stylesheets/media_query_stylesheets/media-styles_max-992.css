@@ -60,9 +60,3 @@
     grid-template-rows: auto;
     gap: 2.4rem 2.4rem;
 }
-
-
-/* sort-items bar temporary css */
-.sort-items-bar {
-    width: 97%;
-}

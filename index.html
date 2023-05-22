@@ -8,6 +8,7 @@
     <title>Feed | LinkedIn</title>
     <!-- stylesheets -->
     <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="assets/stylesheets/media_query_stylesheets/media-styles-max-480.css">
     <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1200px)" href="assets/stylesheets/media_query_stylesheets/media-styles_max-1200.css">
     <link rel="stylesheet" media="screen and (max-width: 992px)" href="assets/stylesheets/media_query_stylesheets/media-styles_max-992.css">
     <link rel="stylesheet" media="screen and (min-width: 576px) and (max-width: 768px)" href="assets/stylesheets/media_query_stylesheets/media-styles_max-768.css">
@@ -18,7 +19,7 @@
 <body>
     <div id="container">
         <!-- header -->
-        <header id="header" class="bg-white w-100 auto-margin fixed abs-t-0 z-100">
+        <header id="header" class="bg-white w-100 auto-margin fixed abs-t-0 z-100 hidden-on-480">
             <div class="container">
                 <div class="row space-between align-center">
                     <div class="logo-search fg-1 h-100">
@@ -32,7 +33,7 @@
                                 <div class="search-bar-row w-100 relative">
                                     <input class="w-100 f-14 border-none b-9" type="text" placeholder="Search">
                                     <div class="search-tool-icon absolute abs-t-0 abs-l-0 column justify-center align-center">
-                                        <i class="fa-solid fa-magnifying-glass f-14" style="color: rgba(0,0,0,0.6);"></i>
+                                        <i class="fa-solid fa-magnifying-glass f-14"></i>
                                     </div>
                                 </div>
                             </div>
@@ -46,7 +47,7 @@
                                         <button class="menu-items-tile column align-center justify-center">
                                             <div class="search-icon header-menu-items">
                                                 <div class="row align-center justify-center h-100">
-                                                    <i class="fa-solid fa-magnifying-glass" style="color: rgba(0,0,0,0.6);"></i>
+                                                    <i class="fa-solid fa-magnifying-glass"></i>
                                                 </div>
                                             </div>
                                             <span class="search-icon-text f-12 grey-light">Search</span>
@@ -57,7 +58,7 @@
                                             <div class="menu-items-tile column align-center justify-center">
                                                 <span class="header-menu-items">
                                                     <div class="row align-center justify-center">
-                                                        <i class="fa-solid fa-house black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                        <i class="fa-solid fa-house black-hover-child"></i>
                                                     </div>
                                                 </span>
                                                 <span class="header-home f-12 grey-light black-hover-child">Home</span>
@@ -69,7 +70,7 @@
                                             <div class="menu-items-tile column align-center justify-center">
                                                 <span class="header-menu-items">
                                                     <div class="row align-center justify-center">
-                                                        <i class="fa-solid fa-user-group black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                        <i class="fa-solid fa-user-group black-hover-child"></i>
                                                     </div>
                                                 </span>
                                                 <span class="header-network f-12 grey-light black-hover-child">My Network</span>
@@ -81,7 +82,7 @@
                                             <div class="menu-items-tile column align-center justify-center">
                                                 <span class="header-menu-items">
                                                     <div class="row align-center justify-center">
-                                                        <i class="fa-solid fa-briefcase black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                        <i class="fa-solid fa-briefcase black-hover-child"></i>
                                                     </div>
                                                 </span>
                                                 <span class="header-jobs f-12 grey-light black-hover-child">Jobs</span>
@@ -93,7 +94,7 @@
                                             <div class="menu-items-tile column align-center justify-center">
                                                 <span class="header-menu-items">
                                                     <div class="row align-center justify-center">
-                                                        <i class="fa-solid fa-message black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                        <i class="fa-solid fa-message black-hover-child"></i>
                                                     </div>
                                                 </span>
                                                 <span class="header-messaging f-12 grey-light black-hover-child">Messaging</span>
@@ -105,7 +106,7 @@
                                             <div class="menu-items-tile column align-center justify-center">
                                                 <span class="header-menu-items">
                                                     <div class="row align-center justify-center">
-                                                        <i class="fa-solid fa-bell black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                        <i class="fa-solid fa-bell black-hover-child"></i>
                                                     </div>
                                                 </span>
                                                 <span class="header-notifications f-12 grey-light black-hover-child">Notifications</span>
@@ -123,7 +124,7 @@
                                                 <span class="profile-menu-item">
                                                     <div class="row text-and-triangle-icon-gap">
                                                         <span class="header-profile-me f-12 grey-light black-hover-child">Me</span>
-                                                        <i class="fa-solid fa-sort-down black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                        <i class="fa-solid fa-sort-down black-hover-child"></i>
                                                     </div>
                                                 </span>
                                             </div>
@@ -134,7 +135,7 @@
                                             <div class="menu-items-tile column align-center justify-center">
                                                 <span class="header-menu-items">
                                                     <div class="row align-center justify-center">
-                                                        <i class="fa-solid fa-list black-hover-child" style="color: rgba(0,0,0,0.6);"></i>
+                                                        <i class="fa-solid fa-list black-hover-child"></i>
                                                     </div>
                                                 </span>
                                                 <span class="work-tab">
@@ -168,7 +169,7 @@
         <div id="content" class="w-100">
             <div class="container">
                 <div class="row space-between align-start">
-                    <aside id="content-left-row">
+                    <aside id="content-left-row" class="hidden-on-480">
                         <div class="widgets">
                             <div class="col">
                                 <div class="widget-top bg-white content-border">
@@ -216,7 +217,7 @@
                                     </div>
                                     <div class="my-items content-padding light-grey-hover">
                                         <a href="#" class="flex align-center between-items-gap justify-flex-start">
-                                            <i class="fa-solid fa-bookmark f-14" style="color: rgba(0,0,0,0.6);"></i>
+                                            <i class="fa-solid fa-bookmark f-14"></i>
                                             <span class="bookmark grey-dark bold f-12">My items</span>
                                         </a>
                                     </div>
@@ -232,7 +233,7 @@
                                                     <a href="#" class="w-100 inline-block blue-1 content-stats-padding">Events</a>
                                                 </span>
                                                 <button title="" class="add-events block small-box-32 light-grey-hover">
-                                                    <i class="fa-solid fa-plus f-15" style="color: rgba(0,0,0,0.6);"></i>
+                                                    <i class="fa-solid fa-plus f-15"></i>
                                                 </button>
                                             </div>
                                             <div class="hastags-widget left-right-padding-120">
@@ -247,21 +248,21 @@
                             </div>
                         </div>
                     </aside>
-                    <aside id="show-more-less-dropdown" class="hidden">
+                    <aside id="show-more-less-dropdown" class="hidden hidden-on-480">
                         <button class="w-100">
                             <div class="show-more w-100 bold flex justify-center align-center between-items-gap">
                                 <span class="show-more-dropdown f-14 grey-light">Show more</span>
-                                <i class="fa-solid fa-chevron-down f-15" style="color: rgba(0,0,0,0.6);"></i>
+                                <i class="fa-solid fa-chevron-down f-15"></i>
                             </div>
                             <div class="show-less w-100 bold flex justify-center align-center between-items-gap">
                                 <span class="show-less-dropdown f-14 grey-light">Show less</span>
-                                <i class="fa-solid fa-chevron-up f-15" style="color: rgba(0,0,0,0.6);"></i>
+                                <i class="fa-solid fa-chevron-up f-15"></i>
                             </div>
                         </button>
                     </aside>
                     <main id="main">
                         <div class="col">
-                            <div class="post-feed bg-white content-border">
+                            <div class="post-feed bg-white content-border hidden-on-480">
                                 <div class="post-feed-profile-post-feed-box small-gap-8 flex align-center">
                                     <a class="post-feed-profile inline-block" href="#">
                                         <img class="image-widget-48" src="https://media.licdn.com/dms/image/D4D03AQFoPMmhIc6r0A/profile-displayphoto-shrink_100_100/0/1665004180317?e=1686182400&v=beta&t=K22Sf77Z7JgZ8GVjw2EIpWaPgNtn2eDekfphh-YikJA" alt="profile">
@@ -309,14 +310,16 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="sort-items-bar flex w-100">
+                            <div class="sort-items-bar flex w-100 hidden-on-480">
                                 <button class="w-100">
                                     <div class="flex w-100 align-center">
                                         <hr class="linebar fg-1 border-none">
-                                        <span class="sort-items text-end flex between-items-gap">
-                                            <span class="sort-by whitespace-wrap grey-light f-12">Sort by:</span>
-                                            <span class="sort-type f-12 bold">Top</span>
-                                            <span class="chevron-down f-14"><i class="fa-solid fa-sort-down"></i></span>
+                                        <span class="span-for-inline-block inline-block">
+                                            <span class="sort-items text-end flex between-items-gap">
+                                                <span class="sort-by whitespace-wrap grey-light f-12">Sort by:</span>
+                                                <span class="sort-type f-12 bold">Top</span>
+                                                <span class="chevron-down f-14"><i class="fa-solid fa-sort-down"></i></span>
+                                            </span>
                                         </span>
                                     </div>
                                 </button>
@@ -348,7 +351,7 @@
                                                                     1d
                                                                 </div>
                                                                 <div class="between-content-dot">
-                                                                    <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                                    <i class="fa-solid fa-circle fa-2xs"></i>
                                                                 </div>
                                                                 <div class="content-availability">
                                                                     <i class="fa-solid fa-earth-americas" style="color: rgba(0,0,0,0.6)"></i>
@@ -360,7 +363,7 @@
                                                 <div class="content-more-options">
                                                     <button title="button" class="light-grey-hover small-box-32">
                                                         <div class="row h-100 justify-center align-center">
-                                                            <i class="fa-solid fa-ellipsis spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-ellipsis spec-font-20"></i>
                                                         </div>
                                                     </button>
                                                 </div>
@@ -402,7 +405,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="between-content-dot">
-                                                        <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        <i class="fa-solid fa-circle fa-2xs"></i>
                                                     </div>
                                                     <div class="post-reposts">
                                                         <button title="button">
@@ -419,7 +422,7 @@
                                                 <li>
                                                     <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
                                                         <span class="response-icon">
-                                                            <i class="fa-regular fa-thumbs-up fa-flip-horizontal spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-regular fa-thumbs-up fa-flip-horizontal spec-font-20"></i>
                                                         </span>
                                                         <span class="response-name grey-light f-14">Like</span>
                                                     </button>
@@ -427,7 +430,7 @@
                                                 <li>
                                                     <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
                                                         <span class="response-icon">
-                                                            <i class="fa-regular fa-comment-dots spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-regular fa-comment-dots spec-font-20"></i>
                                                         </span>
                                                         <span class="response-name grey-light f-14">Comment</span>
                                                     </button>
@@ -443,7 +446,7 @@
                                                 <li>
                                                     <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
                                                         <span class="response-icon">
-                                                            <i class="fa-solid fa-paper-plane spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-paper-plane spec-font-20"></i>
                                                         </span>
                                                         <span class="response-name grey-light f-14">Send</span>
                                                     </button>
@@ -475,11 +478,11 @@
                                                                     6d
                                                                 </div>
                                                                 <div class="between-content-dot">
-                                                                    <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                                    <i class="fa-solid fa-circle fa-2xs"></i>
                                                                 </div>
                                                                 <div class="edited-status">Edited</div>
                                                                 <div class="between-content-dot">
-                                                                    <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                                    <i class="fa-solid fa-circle fa-2xs"></i>
                                                                 </div>
                                                                 <div class="content-availability">
                                                                     <i class="fa-solid fa-earth-americas" style="color: rgba(0,0,0,0.6)"></i>
@@ -491,7 +494,7 @@
                                                 <div class="content-more-options">
                                                     <button title="button" class="light-grey-hover small-box-32">
                                                         <div class="row h-100 justify-center align-center">
-                                                            <i class="fa-solid fa-ellipsis spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-ellipsis spec-font-20"></i>
                                                         </div>
                                                     </button>
                                                 </div>
@@ -533,7 +536,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="between-content-dot">
-                                                        <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                        <i class="fa-solid fa-circle fa-2xs"></i>
                                                     </div>
                                                     <div class="post-reposts">
                                                         <button title="button">
@@ -550,7 +553,7 @@
                                                 <li>
                                                     <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
                                                         <span class="response-icon">
-                                                            <i class="fa-regular fa-thumbs-up fa-flip-horizontal spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-regular fa-thumbs-up fa-flip-horizontal spec-font-20"></i>
                                                         </span>
                                                         <span class="response-name grey-light f-14">Like</span>
                                                     </button>
@@ -558,7 +561,7 @@
                                                 <li>
                                                     <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
                                                         <span class="response-icon">
-                                                            <i class="fa-regular fa-comment-dots spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-regular fa-comment-dots spec-font-20"></i>
                                                         </span>
                                                         <span class="response-name grey-light f-14">Comment</span>
                                                     </button>
@@ -574,7 +577,7 @@
                                                 <li>
                                                     <button title="button" class="bold flex align-center between-items-gap justify-center curve-edge-small light-grey-hover">
                                                         <span class="response-icon">
-                                                            <i class="fa-solid fa-paper-plane spec-font-20" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-paper-plane spec-font-20"></i>
                                                         </span>
                                                         <span class="response-name grey-light f-14">Send</span>
                                                     </button>
@@ -590,7 +593,7 @@
                     </main>
 
                     <!-- news and other content here -->
-                    <aside id="content-right-row">
+                    <aside id="content-right-row" class="hidden-on-480">
                         <div class="col">
                             <div class="linkedin-news bg-white content-border top-bottom-padding-120">
                                 <div class="linkedin-news-bar left-right-padding-120 flex space-between">
@@ -607,7 +610,7 @@
                                                 <div class="news-headline-tile">
                                                     <div class="row align-center">
                                                         <span class="news-list-dot">
-                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-circle fa-2xs"></i>
                                                         </span>
                                                         <span class="news-headline bold">Hiring intent up in these sectors</span>
                                                     </div>
@@ -619,7 +622,7 @@
                                                             ago
                                                         </span>
                                                         <span class="between-content-dot">
-                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-circle fa-2xs"></i>
                                                         </span>
                                                         <span class="news-readers-info">
                                                             <span class="news-readers-count">378</span>
@@ -635,7 +638,7 @@
                                                 <div class="news-headline-tile">
                                                     <div class="row align-center">
                                                         <span class="news-list-dot">
-                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-circle fa-2xs"></i>
                                                         </span>
                                                         <span class="news-headline bold">DMI Finance raises $400M</span>
                                                     </div>
@@ -647,7 +650,7 @@
                                                             ago
                                                         </span>
                                                         <span class="between-content-dot">
-                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-circle fa-2xs"></i>
                                                         </span>
                                                         <span class="news-readers-info">
                                                             <span class="news-readers-count">378</span>
@@ -663,7 +666,7 @@
                                                 <div class="news-headline-tile">
                                                     <div class="row align-center">
                                                         <span class="news-list-dot">
-                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-circle fa-2xs"></i>
                                                         </span>
                                                         <span class="news-headline bold">Fresh IPO funding falls sharply</span>
                                                     </div>
@@ -675,7 +678,7 @@
                                                             ago
                                                         </span>
                                                         <span class="between-content-dot">
-                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-circle fa-2xs"></i>
                                                         </span>
                                                         <span class="news-readers-info">
                                                             <span class="news-readers-count">1020</span>
@@ -691,7 +694,7 @@
                                                 <div class="news-headline-tile">
                                                     <div class="row align-center">
                                                         <span class="news-list-dot">
-                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-circle fa-2xs"></i>
                                                         </span>
                                                         <span class="news-headline bold">IPL's growing global footprint</span>
                                                     </div>
@@ -703,7 +706,7 @@
                                                             ago
                                                         </span>
                                                         <span class="between-content-dot">
-                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-circle fa-2xs"></i>
                                                         </span>
                                                         <span class="news-readers-info">
                                                             <span class="news-readers-count">914</span>
@@ -719,7 +722,7 @@
                                                 <div class="news-headline-tile">
                                                     <div class="row align-center">
                                                         <span class="news-list-dot">
-                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-circle fa-2xs"></i>
                                                         </span>
                                                         <span class="news-headline bold">More shoppers eye premium products</span>
                                                     </div>
@@ -731,7 +734,7 @@
                                                             ago
                                                         </span>
                                                         <span class="between-content-dot">
-                                                            <i class="fa-solid fa-circle fa-2xs" style="color: rgba(0,0,0,0.6);"></i>
+                                                            <i class="fa-solid fa-circle fa-2xs"></i>
                                                         </span>
                                                         <span class="news-readers-info">
                                                             <span class="news-readers-count">104</span>
@@ -748,7 +751,7 @@
                                         <span class="show-more-text grey-light bold transparent-bg">
                                             Show more
                                         </span>
-                                        <i class="fa-solid fa-chevron-down" style="color: rgba(0,0,0,0.6);"></i>
+                                        <i class="fa-solid fa-chevron-down"></i>
                                     </button>
                                 </div>
                             </div>
@@ -790,10 +793,102 @@
                 </div>
             </div>
         </div>
+
+        <!-- ************************ header and footer below 480p ************************** -->
+        <!-- header for content below 480p -->
+        <section id="special-secondary-nav" class="bg-white w-100 auto-margin fixed abs-t-0 z-100 hidden">
+            <div class="container">
+                <div class="row space-between align-center">
+                    <div id="profile-image-480">
+                        <a href="#" class="circular-border inline-block inherit-height inherit-width">
+                            <img class="circular-border user-profile inherit-height inherit-width" src="https://media.licdn.com/dms/image/D4D03AQFoPMmhIc6r0A/profile-displayphoto-shrink_100_100/0/1665004180317?e=1689206400&v=beta&t=RNJGSeWRHi8j4nB84U-eAQVouFFdfx0AW8Q9morECE4" alt="profile">
+                        </a>
+                    </div>
+                    <div id="search-bar-480" class="fg-1">
+                        <button class="search-bar-row w-100 relative">
+                            <input class="w-100 f-14 border-none b-9" type="text" placeholder="Search">
+                            <div class="search-tool-icon absolute abs-t-0 abs-l-0 column justify-center align-center">
+                                <i class="fa-solid fa-magnifying-glass f-16"></i>
+                            </div>
+                        </button>
+                    </div> 
+                    <div id="messaging-box-480" class="nav-icon">
+                        <a href="#" class="inline-block">
+                            <i class="fa-solid fa-message"></i>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <!-- footer for screens below 480p -->
+        <section id="special-primary-nav" class="bg-white w-100 fixed abs-b-0 auto-margin z-100 hidden">
+            <ul class="flex text-center align-center space-between">
+                <li class="special-nav-item active-nav w-100" data-nav-type="HOME">
+                    <a href="#" class="w-100 inline-block icon-container">
+                        <div class="column align-center justify-center">
+                            <span class="nav-icon">
+                                <div class="row align-center justify-center h-100">
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+                            </span>
+                            <span class="f-11 grey-light nav-text">Home</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="special-nav-item w-100" data-nav-type="NETWORK">
+                    <a href="#" class="w-100 inline-block icon-container">
+                        <div class="column align-center justify-center">
+                            <span class="nav-icon">
+                                <div class="row align-center justify-center h-100">
+                                    <i class="fa-solid fa-user-group"></i>
+                                </div>
+                            </span>
+                            <span class="f-11 grey-light nav-text">My Network</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="special-nav-item w-100" data-nav-type="POST">
+                    <a href="#" class="w-100 inline-block icon-container">
+                        <div class="column align-center justify-center">
+                            <span class="nav-icon">
+                                <div class="row align-center justify-center h-100">
+                                    <i class="fa-solid fa-square-plus"></i>
+                                </div>
+                            </span>
+                            <span class="f-11 grey-light nav-text">Post</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="special-nav-item w-100" data-nav-type="NOTIFICATIONS">
+                    <a href="#" class="w-100 inline-block icon-container">
+                        <div class="column align-center justify-center">
+                            <span class="nav-icon">
+                                <div class="row align-center justify-center h-100">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                            </span>
+                            <span class="f-11 grey-light nav-text">Notifications</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="special-nav-item w-100" data-nav-type="JOBS">
+                    <a href="#" class="w-100 inline-block icon-container">
+                        <div class="column align-center justify-center">
+                            <span class="nav-icon">
+                                <div class="row align-center justify-center h-100">
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+                            </span>
+                            <span class="f-11 grey-light nav-text">Jobs</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
     </div>
 
     <!-- for message box -->
-    <div class="message-box content-border inline-block bg-white fixed abs-r-0 abs-b-0 z-100">
+    <div class="message-box content-border inline-block bg-white fixed abs-r-0 abs-b-0 z-100 hidden-on-480">
         <div class="row">
             <div class="message-box-details fg-1 align-center">
                 <div class="row small-gap-8">
@@ -812,13 +907,13 @@
             <div class="message-box-controls flex align-center">
                 <div class="row align-center">
                     <button class="message-box-more-options fs-0 flex align-center space-around light-grey-hover small-box-32">
-                        <i class="fa-solid fa-ellipsis f-16" style="color: rgba(0,0,0,0.6);"></i>
+                        <i class="fa-solid fa-ellipsis f-16"></i>
                     </button>
                     <button class="message-box-new-message f-14 fs-0 flex align-center space-around light-grey-hover small-box-32">
-                        <i class="fa-solid fa-pen-to-square f-16" style="color: rgba(0,0,0,0.6);"></i>
+                        <i class="fa-solid fa-pen-to-square f-16"></i>
                     </button>
                     <button class="message-box-resize fs-0 flex align-center space-around light-grey-hover small-box-32">
-                        <i class="fa-solid fa-chevron-up f-16" style="color: rgba(0,0,0,0.6);"></i>
+                        <i class="fa-solid fa-chevron-up f-16"></i>
                     </button>
                 </div>
             </div>

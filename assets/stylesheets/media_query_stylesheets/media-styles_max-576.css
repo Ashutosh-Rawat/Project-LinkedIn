@@ -107,7 +107,12 @@
 }
 
 .sort-items-bar {
-    width: 94%;
+    width: 99%;
+}
+
+/* for post content response buttons */
+.content-response>ul {
+    column-gap: .4rem;
 }
 
 .message-box {

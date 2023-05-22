@@ -1,0 +1,99 @@
+/* This is media query stylesheet for screen 576px and below */
+#container {
+    width: 100% !important;
+}
+.container {
+    max-width: 100%;
+    width: 100%;
+}
+
+/* for main content */
+#content {
+    margin-top: 56px !important;
+    margin-bottom: 55px !important;
+}
+#content>.container {
+    max-width: 100%;
+}
+#content>.container>.row {
+    grid-template-areas: "main" !important;
+    row-gap: 0 !important;
+}
+
+#main {
+    width: 100%;
+    grid-template: "main";
+}
+
+/* show-more-less show error */
+#show-more-less-dropdown {
+    display: none !important;
+}
+
+/* css for content response of buttons for small screens */
+.content-response>ul {
+    column-gap: .4rem;
+}
+.content-response button .response-name {
+    display: none;
+}
+
+/* ******* new header bars ******** */
+.hidden-on-480 {
+    display: none;
+}
+
+            /* for primary nav */
+#special-primary-nav {
+    display: block;
+    border-top: 1px solid rgb(243,242,239);
+    padding: .4rem .2rem;
+    box-shadow: 0 -1px 0 rgba(0,0,0,0.08);
+}
+.special-nav-item .nav-icon {
+    display: inline-block;
+    height: 2.2rem;
+    width: 2.8rem;
+}
+.nav-icon i {
+    font-size: 2.0rem; 
+}
+
+/* for active navs in primary nav */
+.active-nav i {
+    color: black !important;
+}
+.active-nav .nav-text {
+    color: black !important;
+}
+
+
+            /* for secondary nav */
+#special-secondary-nav {
+    display: block;
+    padding: .8rem 1.6rem;
+    border-bottom: 1px solid rgb(243,242,239);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+}
+#special-secondary-nav>.container>.row {
+    gap: 2rem;
+}
+
+/* column 1 */
+#profile-image-480 {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+/* column 2 */
+#search-bar-480 input {
+    background-color: rgb(238,243,248);
+    height: 32px;
+    line-height: 1.75;
+    padding: .4rem 2.4rem .4rem 32px;
+}
+#search-bar-480 .search-tool-icon {
+    padding: .8rem .5rem .8rem 1rem;
+}
+#messaging-box-480>a {
+    padding: .2rem .4rem;
+}
